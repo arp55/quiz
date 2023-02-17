@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import Form from './components/form/Form';
+import Quiz from './components/quiz/Quiz';
+import Result from './components/result/Result';
 
 function App() {
+  const navigate = useNavigate()
+  const location = useLocation()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Form {...{ navigate }} />} />
+      <Route path='/quiz' element={<Quiz {...{ navigate }} />} />
+      <Route path='/result' element={<Result {...{ location }} />} />
+    </Routes>
   );
 }
 

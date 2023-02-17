@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pagination tests pagination snapshot 1`] = `
+<div
+  className="dot-cont"
+>
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon-page css-i4bv87-MuiSvgIcon-root"
+    data-testid="chevron-icon"
+    focusable="false"
+    onClick={[Function]}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+    />
+  </svg>
+  <div
+    className="page-dot focused"
+    onClick={[Function]}
+  />
+  <div
+    className="page-dot"
+    onClick={[Function]}
+  />
+  <div
+    className="page-dot"
+    onClick={[Function]}
+  />
+  <div
+    className="page-dot"
+    onClick={[Function]}
+  />
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon-page css-i4bv87-MuiSvgIcon-root"
+    data-testid="ChevronRightIcon"
+    focusable="false"
+    onClick={[Function]}
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+    />
+  </svg>
+</div>
+`;
